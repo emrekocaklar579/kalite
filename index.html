@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kalite IPTV, 7 yıllık tecrübesiyle donmayan IPTV hizmeti sunar. 4K UHD kanallar, hızlı server altyapısı ve ücretsiz IPTV test imkanı.">
+
+    <meta name="keywords"
+        content="kalite iptv, kaliteli iptv, iptv satın al, donmayan iptv, 4k iptv, iptv test, güvenilir iptv">
+
+    <meta name="robots" content="index, follow">
+    <title>Kalite IPTV</title>
+
+    <link rel="icon" href="/cropped-cropped-iptv-fv-32x32.png" type="image/png">
+
+    <link rel="canonical" href="https://kaliteiptvtr5.com/">
+
+    <link rel="alternate" hreflang="tr" href="https://kaliteiptvtr5.com/">
+    <link rel="alternate" hreflang="x-default" href="https://kaliteiptvtr5.com/">
+
+    <link rel="amphtml" href="https://amp.kaliteiptvtr6.com/">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #00f2ea;
+            /* Neon Cyan */
+            --secondary: #ff0055;
+            /* Neon Pink */
+            --bg-dark: #0f172a;
+            /* Dark Blue/Slate */
+            --glass: rgba(255, 255, 255, 0.05);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-grey: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(0, 242, 234, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255, 0, 85, 0.05) 0%, transparent 20%);
+        }
+
+        /* Header & Nav */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 900;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .btn-login {
+            background: rgba(0, 242, 234, 0.1);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 8px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .btn-login:hover {
+            background: var(--primary);
+            color: var(--bg-dark);
+            box-shadow: 0 0 20px rgba(0, 242, 234, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 20px 80px;
+        }
+
+        .hero-content h1 {
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        .hero-content h1 span {
+            background: linear-gradient(to right, var(--primary), #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            color: var(--text-grey);
+            max-width: 750px;
+            margin: 0 auto 50px;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-main {
+            background: linear-gradient(135deg, var(--secondary), #ff4d4d);
+            color: white;
+            padding: 18px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 30px rgba(255, 0, 85, 0.3);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 18px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-main:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 0, 85, 0.5);
+        }
+
+        .btn-outline:hover {
+            border-color: white;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .section-desc {
+            text-align: center;
+            color: var(--text-grey);
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .price-card {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            border: 1px solid var(--border);
+            padding: 40px;
+            border-radius: 24px;
+            text-align: center;
+            position: relative;
+            transition: 0.4s;
+            backdrop-filter: blur(5px);
+        }
+
+        .price-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            background: linear-gradient(180deg, rgba(0, 242, 234, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+        }
+
+        .price-card.popular {
+            border: 1px solid var(--secondary);
+            background: linear-gradient(180deg, rgba(255, 0, 85, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+        }
+
+        .badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--secondary);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(255, 0, 85, 0.4);
+        }
+
+        .price {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin: 25px 0;
+            color: #fff;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: var(--text-grey);
+            font-weight: 500;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 40px;
+            text-align: left;
+            padding: 0 10px;
+        }
+
+        .features-list li {
+            margin-bottom: 15px;
+            color: #cbd5e1;
+            display: flex;
+            align-items: center;
+        }
+
+        .features-list i {
+            color: var(--primary);
+            margin-right: 15px;
+            font-size: 1.1rem;
+            background: rgba(0, 242, 234, 0.1);
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .btn-buy {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            background: white;
+            color: var(--bg-dark);
+            text-decoration: none;
+            font-weight: 800;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .btn-buy:hover {
+            background: var(--primary);
+            transform: scale(1.02);
+        }
+
+        /* What is IPTV Section (New) */
+        .info-section {
+            padding: 100px 0;
+            background: linear-gradient(to bottom, var(--bg-dark), #0b1120);
+            border-top: 1px solid var(--border);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .info-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .info-text h2 span {
+            color: var(--primary);
+        }
+
+        .info-text p {
+            color: var(--text-grey);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .info-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .info-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid var(--border);
+        }
+
+        .info-card i {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+
+        .info-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            font-size: 0.9rem;
+            color: var(--text-grey);
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-grey);
+            background: #0b1120;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 992px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .cta-group {
+                flex-direction: column;
+            }
+
+            .pricing-grid {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">Kalite <span>IPTV</span></a>
+            <a href="https://kaliteplayer10.com" class="btn-login">
+                <i class="fa-solid fa-user-lock"></i> Kullanıcı Paneli
+            </a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>TV İzleme Alışkanlığınızı <br> <span>Kalite IPTV</span> ile Değiştirin</h1>
+            <p>2026 teknolojisiyle donatılmış altyapı. Çanak antene veda edin, internetin olduğu her yerde binlerce
+                kanalı, filmi ve diziyi donmadan izleyin.</p>
+            <div class="cta-group">
+                <a href="#paketler" class="btn-main"><i class="fa-solid fa-gem"></i> Paketleri Seç</a>
+                <a href="https://kaliteplayer10.com/buying/test" class="btn-outline"><i class="fa-solid fa-rocket"></i>
+                    Ücretsiz Test Et</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="paketler" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Premium Paketler</h2>
+            <p class="section-desc">Kalite IPTV ayrıcalıklarına erişmek için size en uygun paketi seçin. Gizli ücret
+                yok, taahhüt yok.</p>
+
+            <div class="pricing-grid">
+
+                <div class="price-card">
+                    <h3>Deneme Sürümü</h3>
+                    <div class="price">0 TL</div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-bolt"></i> 24 Saat Tam Erişim</li>
+                        <li><i class="fa-solid fa-tv"></i> +50.000 Kanal & VOD</li>
+                        <li><i class="fa-solid fa-wifi"></i> SD / HD / 4K Yayın</li>
+                        <li><i class="fa-solid fa-headset"></i> Otomatik Teslimat</li>
+                    </ul>
+                    <a href="https://kaliteplayer10.com/buying/test" class="btn-buy">Hemen Dene</a>
+                </div>
+
+                <div class="price-card">
+                    <h3>6 Aylık Gümüş</h3>
+                    <div class="price">1500 TL</div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-calendar-check"></i> 6 Ay Kesintisiz</li>
+                        <li><i class="fa-solid fa-film"></i> Güncel Film & Dizi Arşivi</li>
+                        <li><i class="fa-solid fa-mobile-screen"></i> Mobil, TV ve PC Uyumu</li>
+                        <li><i class="fa-solid fa-shield-halved"></i> Donma Önleyici Sistem</li>
+                    </ul>
+                    <a href="https://kaliteplayer10.com/buy?id=cmjshll1v0000s1wfawdnpfgv" class="btn-buy">Satın Al</a>
+                </div>
+
+                <div class="price-card popular">
+                    <div class="badge">EN ÇOK SATAN</div>
+                    <h3>12 Aylık Gold</h3>
+                    <div class="price">2000 TL</div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-crown"></i> 1 Sene Tam Garanti</li>
+                        <li><i class="fa-solid fa-star"></i> Spor ve Sinema Paketleri</li>
+                        <li><i class="fa-solid fa-whatsapp"></i> VIP WhatsApp Desteği</li>
+                        <li><i class="fa-solid fa-server"></i> Özel Hızlı Sunucu</li>
+                    </ul>
+                    <a href="https://kaliteplayer10.com/buy?id=cmjshmkic0001s1wfrwg6wyba" class="btn-buy"
+                        style="background: var(--secondary); color: white;">Avantajlı Al</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-text">
+                    <h2>IPTV Nedir? <br> Neden <span>Kalite IPTV?</span></h2>
+                    <p>
+                        <strong>IPTV (Internet Protocol Television)</strong>, geleneksel uydu veya kablolu yayınların
+                        aksine, televizyon yayınlarının internet protokolü üzerinden şifreli ve güvenli bir şekilde
+                        iletilmesidir. Bu teknoloji sayesinde, internet bağlantınızın olduğu her yer sizin için bir
+                        sinema salonuna veya stadyuma dönüşür.
+                    </p>
+                    <p>
+                        <strong>Kalite IPTV</strong> olarak farkımız, güçlü sunucu altyapımızdır. Yayınlarımızda donma,
+                        takılma veya görüntü kaybı yaşamazsınız. Akıllı televizyonunuzdan (Smart TV), bilgisayarınızdan,
+                        tabletinizden veya cep telefonunuzdan tek bir üyelikle erişim sağlayabilirsiniz.
+                    </p>
+                    <p style="margin-top: 20px;">
+                        <a href="https://kaliteplayer10.com/buying/test"
+                            style="color: var(--primary); font-weight: bold; text-decoration: none;">Test yayınımızı
+                            deneyerek farkı görün <i class="fa-solid fa-arrow-right"></i></a>
+                    </p>
+                </div>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <i class="fa-solid fa-satellite-dish"></i>
+                        <h4>Çanaksız TV</h4>
+                        <p>Kablo karmaşası veya çanak montajı yok. Sadece internet yeterli.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fa-solid fa-video"></i>
+                        <h4>4K Ultra HD</h4>
+                        <p>Göz alıcı netlikte yayın kalitesi ve yüksek çözünürlük desteği.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        <h4>Seç İzle (VOD)</h4>
+                        <p>Binlerce film ve diziyi dilediğiniz zaman başlatın, durdurun, izleyin.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fa-solid fa-globe"></i>
+                        <h4>Her Yerde</h4>
+                        <p>Evde TV'de, yolda telefonda. Özgürlüğün tadını çıkarın.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="margin-bottom: 20px;">
+                <a href="#" class="logo" style="font-size: 20px;">Kalite<span>IPTV</span></a>
+            </div>
+            <p>&copy; 2026 Kalite IPTV Markası. Tüm Hakları Saklıdır.</p>
+            <p style="font-size: 0.85rem; margin-top: 15px; color: #475569;">
+                Kullanıcı Paneli: <a href="https://kaliteplayer10.com" style="color: #64748b;">kaliteplayer10.com</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
